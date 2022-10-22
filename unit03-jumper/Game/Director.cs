@@ -67,7 +67,6 @@ namespace Jumper.Game
             if(index1)
                 while ((index = GoalWord.IndexOf(userGuess, start)) >= 0)
                 {
-                    _terminalService.WriteNumber(index);
                     blankArray[index] = userGuess;
                     start = index + 1;
                 }
