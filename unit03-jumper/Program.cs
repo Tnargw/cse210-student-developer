@@ -2,6 +2,7 @@
 
 namespace Jumper
 {
+    // Starts the Game.
     class Program
     {
         static void Main(string[] args)

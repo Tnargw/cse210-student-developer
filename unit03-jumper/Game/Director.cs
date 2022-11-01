@@ -1,7 +1,11 @@
 using System.Collections.Generic;
 using System.Linq;
 namespace Jumper.Game
-{    public class Director
+{
+
+
+    // "Directs" the program and dictates how it runs.
+        public class Director
     {
         public TerminalService _terminalService = new TerminalService();
         Jumper _jumper = new Jumper();
@@ -15,6 +19,8 @@ namespace Jumper.Game
         {
 
         }
+
+        // Runs the game while stillPlaying = true.
         public void RunGame()
         {  
             _terminalService.WriteText(_wordToGuess._finalWord);
@@ -26,6 +32,7 @@ namespace Jumper.Game
             }
         }
 
+        // Gets the input for user guess.
         public void GetInput()
         {
             if(counter == 0)
@@ -42,6 +49,7 @@ namespace Jumper.Game
 
         }
 
+        // Checks to see if user input is in the word.
         public void CheckInput()
         {
             char ch;
@@ -58,6 +66,7 @@ namespace Jumper.Game
             }
         }
 
+        // Applies user input to the word to be saved and output.
         private void ApplyUserInput()
         {
             string GoalWord = _wordToGuess._finalWord;
@@ -87,6 +96,7 @@ namespace Jumper.Game
             }
         }
 
+        // Checks to see if the user has won the game.
         private void DetermineWin()
         {
             if(!blankArray.Contains("_"))

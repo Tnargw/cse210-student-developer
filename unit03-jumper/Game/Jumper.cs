@@ -3,6 +3,8 @@ using System.Collections.Generic;
 
 namespace Jumper.Game
 {
+
+    // Creates and controls the jumper guy.
     public class Jumper
     {
         TerminalService _terminalService = new TerminalService();
@@ -14,6 +16,7 @@ namespace Jumper.Game
     
         }
 
+        // Creates a List to be output as the JumperMan.
         public List<string> Jumperman()
         {
             jumpermanboi.Add(" ___ ");
@@ -30,6 +33,7 @@ namespace Jumper.Game
 
         }
 
+        // Prints the JumperMan.
         public void PrintJumper()
         {
             for(int i=0;i<jumpermanboi.Count;i++)
