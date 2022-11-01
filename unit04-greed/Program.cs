@@ -15,7 +15,7 @@ namespace unit04_greed
         private static int MAX_Y = 600;
         private static int CELL_SIZE = 15;
         private static int FONT_SIZE = 15;
-        private static string CAPTION = "Robot Finds Kitten";
+        private static string CAPTION = "Greed";
         private static Color WHITE = new Color(255, 255, 255);
 
 
